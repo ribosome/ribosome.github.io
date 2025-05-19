@@ -12,6 +12,7 @@
 3. **修改頁面內容**
    - 主要頁面位於 `index.md`，並使用 `_layouts/default.html` 佈局。
    - 亦可新增其他頁面或文章資料夾如 `_posts/` 進行擴充。
+   - 例如 `quote.md` 提供線上報價表單示範。
 4. **提交並推送變更**
    - 使用 `git add`、`git commit` 以及 `git push` 將變更推送至 GitHub。
 5. **啟用 GitHub Pages**
