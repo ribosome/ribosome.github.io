@@ -15,21 +15,21 @@ title: 睿鉑網路有限公司
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center primary-text"><i class="material-icons">public</i></h2>
+          <h2 class="center primary-text"><i class="material-icons" aria-hidden="true">public</i></h2>
           <h5 class="center">網路架設</h5>
           <p class="light">專業的網站與應用程式開發服務，依客戶需求打造最佳方案。</p>
         </div>
       </div>
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center primary-text"><i class="material-icons">security</i></h2>
+          <h2 class="center primary-text"><i class="material-icons" aria-hidden="true">security</i></h2>
           <h5 class="center">資訊安全</h5>
           <p class="light">提供全方位的資訊安全諮詢與防護，確保企業資料安全無虞。</p>
         </div>
       </div>
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center primary-text"><i class="material-icons">cloud</i></h2>
+          <h2 class="center primary-text"><i class="material-icons" aria-hidden="true">cloud</i></h2>
           <h5 class="center">雲端服務</h5>
           <p class="light">協助企業導入雲端解決方案，提升營運效率與彈性。</p>
         </div>
