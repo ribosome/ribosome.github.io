@@ -7,6 +7,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
   <style>
+    :root {
+      --primary-color: #87CEEB; /* sky blue */
+    }
     .section { padding-top: 4rem; padding-bottom: 4rem; }
     #cookie-consent {
       position: fixed;
@@ -19,6 +22,9 @@
       display: none;
       z-index: 1000;
     }
+    nav,
+    .page-footer { background-color: var(--primary-color); }
+    .primary-text { color: var(--primary-color); }
   </style>
 </head>
 <body>
@@ -41,7 +47,7 @@
   {{ content }}
   <footer class="page-footer">
     <div class="container">
-      © 2024 {{ site.name }}
+      © 2025 {{ site.name }}
     </div>
   </footer>
   <div id="cookie-consent" class="grey lighten-4">
