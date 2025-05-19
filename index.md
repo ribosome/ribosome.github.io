@@ -7,6 +7,7 @@ title: 睿鉑網路有限公司
   <div class="container">
     <h2>關於睿鉑</h2>
     <p>睿鉑網路有限公司致力於提供專業的網路解決方案與服務，協助客戶在數位時代中取得成功。</p>
+    <p><a href="/about.html" class="btn waves-effect">更多介紹</a></p>
   </div>
 </div>
 <div id="services" class="section grey lighten-4 scrollspy">
