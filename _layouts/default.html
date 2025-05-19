@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.name }}</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <style>
+    .section { padding-top: 4rem; padding-bottom: 4rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper container">
+      <a href="/" class="brand-logo">{{ site.name }}</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="#services">服務項目</a></li>
+        <li><a href="#contact">聯絡我們</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#about">關於我們</a></li>
+    <li><a href="#services">服務項目</a></li>
+    <li><a href="#contact">聯絡我們</a></li>
+  </ul>
+  {{ content }}
+  <footer class="page-footer">
+    <div class="container">
+      © 2024 {{ site.name }}
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elemsSidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elemsSidenav);
+      var elemsScrollspy = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(elemsScrollspy, {scrollOffset: 70});
+    });
+  </script>
+</body>
+</html>
