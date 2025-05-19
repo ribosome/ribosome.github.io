@@ -38,13 +38,3 @@ title: 睿鉑網路有限公司
     </div>
   </div>
 </div>
-<div id="contact" class="section scrollspy">
-  <div class="container">
-    <h2>聯絡我們</h2>
-    <p>如需進一步了解服務，歡迎透過以下方式與我們聯繫：</p>
-    <ul>
-      <li>電話：<a href="tel:123456789">123-456-789</a></li>
-      <li>Email：<a href="mailto:info@example.com">info@example.com</a></li>
-    </ul>
-  </div>
-</div>
