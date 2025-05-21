@@ -60,6 +60,20 @@
       <a id="cookie-consent-accept" class="btn waves-effect blue" style="margin-left: 1rem;">我同意</a>
     </div>
   </div>
+  <div id="notification-center" class="modal">
+    <div class="modal-content">
+      <h4>通知中心</h4>
+      <ul id="notifications-list" class="collection"></ul>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="modal-close waves-effect btn-flat">關閉</a>
+    </div>
+  </div>
+  <div class="fixed-action-btn">
+    <a id="notification-btn" class="btn-floating btn-large red">
+      <i class="large material-icons">notifications</i>
+    </a>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -67,6 +81,8 @@
       M.Sidenav.init(elemsSidenav);
       var elemsScrollspy = document.querySelectorAll('.scrollspy');
       M.ScrollSpy.init(elemsScrollspy, {scrollOffset: 70});
+        var elemsModal = document.querySelectorAll(".modal");
+        M.Modal.init(elemsModal);
 
       if (!localStorage.getItem('cookieConsent')) {
         var banner = document.getElementById('cookie-consent');
@@ -76,6 +92,26 @@
           banner.style.display = 'none';
         });
       }
+        var notificationBtn = document.getElementById("notification-btn");
+        var notificationCenter = document.getElementById("notification-center");
+        if (notificationBtn) {
+          notificationBtn.addEventListener("click", function() {
+            var instance = M.Modal.getInstance(notificationCenter);
+            instance.open();
+          });
+        }
+        if (!localStorage.getItem("welcomeShown")) {
+          var notificationsList = document.getElementById("notifications-list");
+          if (notificationsList) {
+            var li = document.createElement("li");
+            li.className = "collection-item";
+            li.textContent = "歡迎使用本站！";
+            notificationsList.appendChild(li);
+          }
+          var instance = M.Modal.getInstance(notificationCenter);
+          instance.open();
+          localStorage.setItem("welcomeShown", "true");
+        }
     });
   </script>
 </body>
