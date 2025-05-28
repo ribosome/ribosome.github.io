@@ -8,7 +8,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
   <style>
     :root {
-      --primary-color: #87CEEB; /* sky blue */
+      /* 使用粉綠色作為網站主色 */
+      --primary-color: #a8e6cf;
     }
     .section { padding-top: 4rem; padding-bottom: 4rem; }
     #cookie-consent {
@@ -32,6 +33,9 @@
       z-index: 1000;
     }
     body { padding-top: 64px; }
+    .btn,
+    .btn:hover,
+    .btn-floating { background-color: var(--primary-color); }
   </style>
 </head>
 <body>
@@ -66,7 +70,7 @@
   <div id="cookie-consent" class="grey lighten-4">
     <div class="container">
       本網站使用 cookie 以提升使用體驗。更多資訊請參閱 <a href="/privacy-policy.html">隱私政策</a>。
-      <a id="cookie-consent-accept" class="btn waves-effect blue" style="margin-left: 1rem;">我同意</a>
+      <a id="cookie-consent-accept" class="btn waves-effect" style="margin-left: 1rem;">我同意</a>
     </div>
   </div>
   <div id="notification-center" class="modal">
@@ -79,7 +83,7 @@
     </div>
   </div>
   <div class="fixed-action-btn">
-    <a id="notification-btn" class="btn-floating btn-large red">
+    <a id="notification-btn" class="btn-floating btn-large">
       <i class="large material-icons">notifications</i>
     </a>
   </div>
